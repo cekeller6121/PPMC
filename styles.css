@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+  background-color: DodgerBlue;
+}
+
+.pageContent {
+  font-family: 'Amatic SC';
+  margin-top: 15%;
+}
+
+.heading {
+  font-size: 30px;
+  text-align: center;
+}
+
+.countdown {
+  font-size: 20px;
+  text-align: center;
+}

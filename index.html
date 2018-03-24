@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>PPMC 2018 Countdown</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <section class="pageContent">
+
+      <div class="heading">
+        <h1>Pocono Plateau Music Camp</h1>
+        <h1>2018 Countdown!</h1>
+      </div>
+
+      <div class="countdown">
+        <div id="countDown">
+        </div>
+      </div>
+
+    </section>
+
+    <script>
+
+$(document).ready( function() {
+  var countDownDate = new Date("June 24, 2018 14:00:00").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    }, 1000);
+  });
+
+
+</script>
+
+  </body>
+</html>
